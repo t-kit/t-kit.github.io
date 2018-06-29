@@ -1,0 +1,53 @@
+<html>
+
+
+<script>
+
+function process()
+
+{
+var url="https://www.google.ru/search?source=hp&q=" + document.getElementById("url").value + "&uule=w+CAIQICIUTW9zY293LE1vc2NvdyxSdXNzaWE";
+location.href=url;
+return false;
+}
+
+</script>
+
+	<form onSubmit="return process();">
+	<div class="logo">
+		<img src="https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_960_720.png" alt="google">
+	</div>
+	<input type="text" name="url" id="url" placeholder="Введите поисковой запрос">
+
+	</form>
+
+
+<style>
+	html {
+		background-image: url(http://s1.1zoom.me/b5050/894/424180-Kycb_2048x1152.jpg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.logo {
+		padding-top: 15%;
+	}
+	img {
+		margin: 0 auto;
+		height: 12%;
+		width: auto;
+		display: block;
+	}
+	form input {
+		height: 4%;
+		width: 40%;
+		margin: 0 auto;
+		display: block;
+		font-size: 16px;
+		color: #282828;
+		padding: 5px 10px;
+		opacity: 0.8;
+	}
+</style>
+</html>
