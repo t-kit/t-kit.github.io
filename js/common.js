@@ -34,13 +34,6 @@ $(document).ready(function() {
             campaign); 
     });
 
-    /*
-    function ClipBoard() {
-        new ClipboardJS('#copyShortened');
-    }
-    ClipBoard();
-    */
-
     function checkValidity() {
 
         var url = $('#url').val();
