@@ -1,4 +1,4 @@
-var bitly_url = 'https://api.bitly.com/v3/shorten';
+var bitly_url = '//api.bitly.com/v3/shorten';
 var bitly_login = 'o_71goo47q1b';
 var bitly_apiKey = 'R_e0131f8b722b446996d6c8595e1d7c9c';
 
