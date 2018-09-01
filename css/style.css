@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+}
+::placeholder {
+    color: #b2b2b2;
+}
+input, textarea {
+    font-size: 16px;
+}
+.wrapper {
+    font-size: 16px;
+    margin: 0 2%;
+}
+.wrapper h1 {
+    color: DodgerBlue;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.data {
+    margin-top: 20px;
+    position: relative;
+}
+label.data-label {
+    display: block;
+    margin-bottom: 5px;
+}
+textarea.data-input {
+    display: block;
+    height: 28px;
+    width: 50%;
+    padding: 5px 10px;
+}
+input.data-input {
+    display: block;
+    padding: 5px 10px;
+    width: 300px;
+}
+input.data-checkbox {
+    display: inline-block;
+}
+.data-label-edit {
+    display: block;    
+    position: absolute;
+    left: 340px;
+    top: 26px;
+}
+.data-checkbox {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}
+.checkbox-label {
+    position: relative;
+    bottom: 4px;
+}
+.data-output {
+    border: 1px solid #b2b2b2;
+    background-color: transparent;
+    height: 160px;
+    width: 40%;
+    word-wrap: break-word;
+
+}
+#longUrl {
+    height: 60px;
+}
+.data-submit {
+    background-color: DodgerBlue;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+}
+.output-wrapper {
+    position: relative;
+    margin-top: 40px;
+
+}
+#copyToClip {
+    font-size: 12px;
+    color: #696969;
+    background-color: #CFCFCF;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: calc(40% - 98px);
+}
+#copyShortened {
+    border: 2px solid DodgerBlue;
+    background-color: transparent;
+    color: DodgerBlue;
+    transition: all 0.2s linear;
+    height: 40px;
+}
+
+#copyShortened:hover {
+    border: 2px solid transparent;
+    background-color: DodgerBlue;
+    color: #fff;
+}
+.data-output2 {
+    margin-top: 0;
+}
+#build {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 968px) {
+    #url {
+        height: 60px;
+        width: 98%;
+    }
+    #longUrl {
+        height: 90px;
+        width: 98%;
+    }
+    .data-input {
+        width:70%;
+    }
+    .data-output {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .data-label-edit {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 8px;
+    }
+    .data-checkbox {
+        display: block;
+    }
+    #url {
+        height: 90px;
+        width: 96%;
+    }
+    #longUrl {
+        height: 120px;
+        width: 96%;
+    }   
+}

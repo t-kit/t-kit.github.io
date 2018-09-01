@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Компоновщик URL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form class="wrapper">
+        <h1>Компоновщик URL</h1>
+
+        <!--URL-->
+        <div class="data">
+            <label class="data-label" for="url">Целевой URL:</label>
+            <textarea name="url" id="url" class="data-input" placeholder="https://t-kit.ru/collection/sony/product/sony-fdr-x3000r" required></textarea>
+        
+        </div>
+
+        <!--UTM_SOURCE-->
+        <div class="data">
+            <label class="data-label" for="source">Источник трафика. По умолчанию «youtube»</label>
+            <input name="source" type="text" id="utm_source" class="data-input" value="youtube" disabled required>
+            <div class="data-label-edit">
+                <input type="checkbox" id="editSource" name="editSource" class="data-checkbox">
+                <label class="checkbox-label" for="editSource">Редактировать поле</label>
+            </div>
+
+        </div>
+
+        <!--UTM_MEDIUM-->
+        <div class="data">
+            <label class="data-label" for="medium">Тип трафика. По умолчанию «referral»</label>
+            <input name="medium" type="text" id="utm_medium" class="data-input" value="referral" disabled required>
+            <div class="data-label-edit">
+                <input type="checkbox" id="editMedium" name="editMedium" class="data-checkbox">
+                <label class="checkbox-label" for="editSource">Редактировать поле</label>
+            </div>
+
+        </div>
+
+        <!--UTM_CAMPAIGN-->
+        <div class="data">
+            <label class="data-label" for="campaign">Название кампании:</label>
+            <input name="campaign" type="text" id="utm_campaign" class="data-input" placeholder="xiaomi-mi-8-se" required>
+        </div>
+
+        <button type="submit" id="build" class="data-submit">Создать метку</button>
+        <input id="button" type="submit" class="data-submit" value="Сократить ссылку">
+
+    <!--URL SHORTENER-->
+        <div style="margin-top: 40px;">
+            <label for="longUrl" class="data-label">Ссылка с UTM-меткой:</label>
+            <textarea name="longUrl" id="longUrl" class="data-input" placeholder="https://t-kit.ru/collection/sony/product/sony-fdr-x3000r/?utm_source=youtube&utm_medium=referral&utm_campaign=sony-fdr-x3000r"></textarea>
+            <div id="shortUrl" style="display: none!important;"></div>
+            
+        </div>
+        <!--<div>
+            <div class="data data-output2">
+                <button class="btn data-submit" id="copyShortened" data-clipboard-target="#shortUrl">Cкопировать</button>
+            </div>
+        </div>-->
+
+
+    </form>
+
+    <style>
+    
+    </style>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/bitly.js"></script>
+    <script src="js/common.js"></script>
+    
+</body>
+</html>
