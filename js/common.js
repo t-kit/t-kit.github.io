@@ -36,11 +36,6 @@ $(document).ready(function() {
 
     function checkValidity() {
 
-        var url = $('#url').val();
-        var source = $('#utm_source').val();
-        var medium = $('#utm_medium').val();
-        var campaign = $('#utm_campaign').val();
-
         $('#build').click(function() {
             if ($('#url').val() == '') {
                 alert('Поле «Целевой URL» не заполнено!»');
